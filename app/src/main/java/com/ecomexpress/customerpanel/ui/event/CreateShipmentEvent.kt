@@ -1,0 +1,73 @@
+package com.ecomexpress.customerpanel.ui.event
+
+import com.ecomexpress.customerpanel.data.response.ShipmentItem
+
+sealed class CreateShipmentEvent{
+
+    data class MobileChanged(val mobile:String):CreateShipmentEvent()
+    data class NameChanged(val name:String):CreateShipmentEvent()
+    data class Address1Changed(val address1:String):CreateShipmentEvent()
+    data class Address2Changed(val address2:String):CreateShipmentEvent()
+    data class LandMarkChanged(val landmark:String):CreateShipmentEvent()
+    data class PincodeChanged(val pincode:String):CreateShipmentEvent()
+    data class AltMobileChanged(val altMobile:String):CreateShipmentEvent()
+    object AltMobileExpand : CreateShipmentEvent()
+    object ConsigneeExpand : CreateShipmentEvent()
+    object OrderExpand : CreateShipmentEvent()
+    object PickupExpand : CreateShipmentEvent()
+    object ShipmentExpand : CreateShipmentEvent()
+    data class PaymentTypeChange(val type:Int):CreateShipmentEvent()
+    data class OrderNumberChange(val value:String):CreateShipmentEvent()
+    data class DeclaredValueChange(val value:String):CreateShipmentEvent()
+    data class CollectableValueChange(val value:String):CreateShipmentEvent()
+    data class InvoiceNumberChange(val value:String):CreateShipmentEvent()
+    data class InvoiceDateChange(val value:String):CreateShipmentEvent()
+    data class PickupNameChange(val value:String):CreateShipmentEvent()
+    data class PickupAddressChange(val value:String):CreateShipmentEvent()
+    data class PickupPinCodeChange(val value:String):CreateShipmentEvent()
+    data class PickupLocationTypeChange(val value:String):CreateShipmentEvent()
+    data class PickupMobileChange(val value:String):CreateShipmentEvent()
+    data class PickupAltMobileChange(val value:String):CreateShipmentEvent()
+    object PickupALtMobileExpand:CreateShipmentEvent()
+    object PickupReturnSwitch:CreateShipmentEvent()
+    data class PackagingUsedChange(val value:String):CreateShipmentEvent()
+    data class PackagingTypeChange(val value:String):CreateShipmentEvent()
+    data class LengthChange(val value:String):CreateShipmentEvent()
+    data class BreadthChange(val value:String):CreateShipmentEvent()
+    data class WeightChange(val value:String):CreateShipmentEvent()
+    data class VolWeightChange(val value:String):CreateShipmentEvent()
+    data class HeightChange(val value:String):CreateShipmentEvent()
+    data class NewItemNameChange(val value:String):CreateShipmentEvent()
+    data class NewItemCategoryChange(val value:String):CreateShipmentEvent()
+    data class NewItemWeightChange(val value:String):CreateShipmentEvent()
+    data class NewItemQuantityChange(val value:String):CreateShipmentEvent()
+    object NewItemIsEssential:CreateShipmentEvent()
+    object NewItemIsDangerous:CreateShipmentEvent()
+    object NewItemAdd:CreateShipmentEvent()
+    object NewItemClose:CreateShipmentEvent()
+    data class DeleteItem(val value:ShipmentItem):CreateShipmentEvent()
+    object ClearAll:CreateShipmentEvent()
+
+
+    data class SellerGSTNChanged(val sellerGSTN:String):CreateShipmentEvent()
+    data class EwayBillChanged(val ewayBill:String):CreateShipmentEvent()
+    data class TotalItemValueChanged(val totalItemValue:String):CreateShipmentEvent()
+    data class SGSTAmtChanged(val sgstAmt:String):CreateShipmentEvent()
+    data class CGSTAmtChanged(val cgstAmt:String):CreateShipmentEvent()
+    data class IGSTAmtChanged(val igstAmt:String):CreateShipmentEvent()
+    data class TotalGSTAmtChanged(val totalGSTAmt:String):CreateShipmentEvent()
+    data class TotalInvoiceValueChanged(val totalInvoiceValue:String):CreateShipmentEvent()
+
+    //
+    data class ReferenceIdChanged(val referenceId:String):CreateShipmentEvent()
+    data class ItemCategoryChanged(val itemCategory:String):CreateShipmentEvent()
+    data class ItemNameChanged(val itemName:String):CreateShipmentEvent()
+    data class ItemDescriptionChanged(val itemDescription:String):CreateShipmentEvent()
+    data class HSNCodeChanged(val hsnCode:String):CreateShipmentEvent()
+    data class DeadWeightChanged(val deadWeight:String):CreateShipmentEvent()
+    data class PackagingNameChanged(val packagingName:String):CreateShipmentEvent()
+
+    data class CityChanged(val city:String):CreateShipmentEvent()
+    data class StateChanged(val state:String):CreateShipmentEvent()
+
+}

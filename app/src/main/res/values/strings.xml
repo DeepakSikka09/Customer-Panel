@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Customer Panel</string>
+    <string name="amount_to_be_paid">Amount to be paid</string>
+    <string name="prepaid_delivery">Prepaid Delivery</string>
+    <string name="leading_icon">Leading Icon</string>
+    <string name="trailing_icon">Trailing Icon</string>
+</resources>

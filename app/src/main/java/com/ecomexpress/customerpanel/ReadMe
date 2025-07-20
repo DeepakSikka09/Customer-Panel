@@ -1,0 +1,19 @@
+Implemented :
+1). Hilt for Data Injection.
+2). Room Database.
+3). Data store.
+4). Retrofit.
+5). Introduce new Layer which is Domain Layer.
+6). JetPack Compose.
+
+
+Rule of project
+1. Do not use !! as null check
+2. Do not give names like tv_, img...
+3. Do not repeat code.code
+
+
+Kotlin features used :--
+
+1. Stateflow
+

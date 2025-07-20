@@ -1,0 +1,30 @@
+package com.ecomexpress.customerpanel.utils.enums
+
+enum class ScreenEnum {
+    SplashScreen,
+    Login,
+    Home,
+    Search,
+    SearchScreenResult,
+    RateCalculator,
+    ProfileScreen,
+    PinCodeSearch,
+    ActionPending,
+    NdrScreen,
+    RechargeWallet,
+    Reattempt,
+    Return,
+    CreateShipment,
+    WalletScreen,
+    ForgotPassword,
+    ChangePassword,
+    VerifyScreen,
+    VerifyResendScreen,
+    SearchAddressScreen,
+    SearchItemScreen,
+    SearchPackageScreen,
+    AddPackageScreen,
+    AddItemScreen,
+    AddAddressScreen,
+    PrintLabelScreen
+}
